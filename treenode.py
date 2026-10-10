@@ -1,4 +1,14 @@
-"""🌳 Define the binary tree node used to build and manipulate trees."""
+"""
+🌳 Define the TreeNode class for representing binary tree structures.
+
+Each node stores an integer value and maintains references to its left
+and right children, allowing nodes to be connected into a binary tree.
+
+The class serves as a reusable building block for tree-based algorithms,
+supporting operations such as traversal, inversion, depth calculation,
+and structural comparison across different binary tree problems.
+"""
+
 from typing import Optional
 
 class TreeNode:
