@@ -27,8 +27,8 @@
   {
     "title": "➖ Handle Negative Node Values",
     "input": {"root": [-1, -2, -3, -4, -5]},
-    "output": [-1, -3, -2, -5, -4],
-    "description": "🔢 Confirm that inversion changes tree structure without changing node values."
+    "output": [-1, -3, -2, null, null, -5, -4],
+    "description": "🧮 Verify that negative values remain unchanged while the tree structure is mirrored."
   },
   {
     "title": "🪞 Invert a Symmetric Tree",
@@ -36,11 +36,11 @@
     "output": [1, 2, 2, 3, 4, 4, 3],
     "description": "✨ Verify that mirroring a symmetric tree preserves its serialized structure."
   },
-    {
+  {
     "title": "🌲 Invert a Deep Binary Tree",
     "input": {"root": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
-    "output": [1, 3, 2, 7, 6, 5, 4, 9, 8],
-    "description": "🏔️ Verify that inversion correctly swaps children across several tree levels."
+    "output": [1, 3, 2, 7, 6, 5, 4, null, null, null, null, null, null, 9, 8],
+    "description": "🏔️ Verify inversion across multiple levels while preserving the positions of deeper nodes."
   },
   {
     "title": "🧩 Invert a Highly Uneven Tree",
@@ -51,8 +51,8 @@
   {
     "title": "🔢 Invert a Tree with Duplicate Values",
     "input": {"root": [1, 1, 1, 1, 1]},
-    "output": [1, 1, 1, 1, 1],
-    "description": "🔁 Ensure inversion depends on child positions, not unique node values."
+    "output": [1, 1, 1, null, null, 1, 1],
+    "description": "🔁 Ensure inversion correctly mirrors an asymmetric tree even when every node has the same value."
   },
   {
     "title": "💯 Handle Maximum Positive Values",
