@@ -8,11 +8,14 @@ into the mirror image of its original structure.
 
 from typing import Optional
 from treenode import TreeNode
-from .approaches import Recursion
+from .approaches import Recursion, IterativeDFS
 
 class Solution:
     """🪞 Provide the solution for mirroring a binary tree."""
 
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # 🍃 An empty tree has nothing to invert; return its root as-is.
-        return Recursion.invertTree(root)
+        recursion: Recursion = Recursion()
+        iterativeDFS: IterativeDFS = IterativeDFS()
+        
+        return iterativeDFS.invertTree(root)
