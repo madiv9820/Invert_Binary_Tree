@@ -8,11 +8,11 @@ into the mirror image of its original structure.
 
 from typing import Optional
 from treenode import TreeNode
-
+from .approaches import Recursion
 
 class Solution:
     """🪞 Provide the solution for mirroring a binary tree."""
 
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # 🍃 An empty tree has nothing to invert; return its root as-is.
-        return root
+        return Recursion.invertTree(root)
